@@ -1,0 +1,17 @@
+Math.random()
+0.07001772686611285
+Math.random()*10
+9.423850421995628
+Math.random()*100
+94.55192175836915
+Math.random_()
+Math.random()*100
+71.06527940504728
+Math.round(10.51)
+11
+Math.floor(Math.random()*(31-15))+15
+19
+Math.floor(Math.random()*(31-15))+15
+17
+Math.floor(Math.random()*(31-15))+15
+16

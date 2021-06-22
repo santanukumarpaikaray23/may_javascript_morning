@@ -61,3 +61,35 @@ name.replace(/ /g,'')
 name.replace(/ /g,'-')
 "-Bhumika-.-"
 
+var url = "https://github.com/santanukumarpaikaray23/nodejs-basic-advanced-with-aakash";
+var url = "https://github.com/santanukumarpaikaray23/nodejs-basic-advanced-with-aakash";
+undefined
+url.split('/')
+(5) ["https:", "", "github.com", "santanukumarpaikaray23", "nodejs-basic-advanced-with-aakash"]
+var out = url.split('\')
+VM378:1 Uncaught SyntaxError: Invalid or unexpected token
+var out = url.split('/')
+undefined
+out[0]
+"https:"
+out[5]
+undefined
+out[2]
+"github.com"
+out[out.length-1]
+"nodejs-basic-advanced-with-aakash"
+var a = "javascript i am learning javascript"
+undefined
+a.split('')
+(35) ["j", "a", "v", "a", "s", "c", "r", "i", "p", "t", " ", "i", " ", "a", "m", " ", "l", "e", "a", "r", "n", "i", "n", "g", " ", "j", "a", "v", "a", "s", "c", "r", "i", "p", "t"]
+a.split(' ')
+(5) ["javascript", "i", "am", "learning", "javascript"]
+var a = "javascript"
+undefined
+a.split('')
+(10) ["j", "a", "v", "a", "s", "c", "r", "i", "p", "t"]
+out.toString()
+"https:,,github.com,santanukumarpaikaray23,nodejs-basic-advanced-with-aakash"
+out.toString().replace(/,/,'')
+"https:,github.com,santanukumarpaikaray23,nodejs-basic-advanced-with-aakash"
+
