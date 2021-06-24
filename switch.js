@@ -27,7 +27,7 @@ switch (new Date().getDay()){
     case 0:
         console.log(`Today is Sunday`)
         break;
-        case 2:
+        case 3:
             console.log(`Today is tuesday`)
             break;
             default:
