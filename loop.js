@@ -50,3 +50,66 @@ for(i=0;i<myarray.length;i++){
         console.log(myarray[i])
     }
 }
+/////
+while
+//////
+var i =10
+while(i<5){
+    console.log(i)
+    i++
+}
+
+/////////
+do while
+/////////
+var i =10
+do{
+    console.log(i)
+    i++
+}
+while(i<5)
+
+///////
+for of
+///////
+var city =["London","Delhi","New York","Paris"]
+for(mycity of city){
+    console.log(mycity)
+}
+
+var city = ["Amsterdam","Dubai",["Bmw","Audi","Skoda"],"Lodon","Mumbai"]
+for (mycity of city){
+    if(Array.isArray(mycity)){
+        for(cars of mycity){
+            console.log(cars)
+
+        }
+    }else{
+        console.logs(mycity)
+    }
+}
+
+var data;
+for(i=0;i<5;i++){
+    data=data+`${1}`
+}
+console.log(data)
+
+var data;
+for(i=0;i<5;i++){
+    data=data+`${1},`
+}
+console.log(data)
+ undefined11111
+undefined
+
+var city = ["London","Delhi","Newyork","Paris"]
+var out=""
+for(i=0;i<city.length;i++){
+    out += `${city[i]},`
+}
+
+var city = ["London","Delhi","NewYork","Paris"]
+for(i=0;i<city.length;i++){
+    console.log(city[i])
+}
