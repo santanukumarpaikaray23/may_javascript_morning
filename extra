@@ -108,7 +108,7 @@ number+number=number
 "10"+"2"
 "102"
 /////
-video-10 done
+video-14 done
 imp Note
 ------------
 if you know these 5 things your can make any logic easyly 
@@ -118,4 +118,12 @@ in the world
 (3)array
 (4)var
 (5)if,else
+(6)var
 ->one function can't return more than 1 value.
+
+var movies={
+    name:"Avengers",
+    rating:4.4,
+    language:'English'
+}
+Object.freeze(movies)

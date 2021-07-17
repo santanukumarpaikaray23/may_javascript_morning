@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <script>
+            // function add(){
+            //     var a = document.getElementById('first').value;
+            //     var b = document.getElementById('second').value;
+            //     var out = Number(a)+Number(b)
+            //     document.getElementById('out').innerText = out
+            // }
+            // function sub(){
+            //     var a = document.getElementById('first').value;
+            //     var b = document.getElementById('second').value;
+            //     var out = a-b
+            //     document.getElementById('out').innerText = out
+            // }
+            // function mul(){
+            //     var a = document.getElementById('first').value;
+            //     var b = document.getElementById('second').value;
+            //     var out = a*b
+            //     document.getElementById('out').innerText = out
+            // }
+            // function div(){
+            //     var a = document.getElementById('first').value;
+            //     var b = document.getElementById('second').value;
+            //     var out = a/b
+            //     document.getElementById('out').innerText = out
+            // }
+            function calc(opt){
+                var a=document.getElementById('first').value;
+                var b=document.getElementById('second').value;
+                var out = 0;
+                if(opt == "Add"){
+                    out=Number(a)+Number(b)
+                    
+                }else{
+                    out = Number(a)-Number(b)
+                }
+                document.getElementById('out').innerText=out
+
+            }
+        </script>
+    </head>
+    <body>
+        <input id="first"/>
+        <input id="second"/>
+     
+        <button onClick="calc('Add')">Add</button>
+        <button onClick="calc('Sub')">Sub</button>
+        <!-- <button onClick="mul()">Mul</button>
+        <button onClick="div()">div</button> -->
+        <p id="out"> </p>
+    </body>
+</html>
