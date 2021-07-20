@@ -1,0 +1,38 @@
+<html>
+    <head>
+       <title>jio location</title> 
+    </head>
+    <body>
+        <button onclick="jiolocation()">
+            Get Jio
+        </button>
+        <p id="out"></p>
+        <p id="Add"></p>
+        <script>
+            var x = document.getElementById('out');
+            var y = document.getElementById('add');
+            function jiolocation(){
+                if(navigator.jiolocation){
+                    navigator.jiolocation.getCurrentPosition(showPosition)
+
+                }else{
+                    x.innerText="jio not supported"
+
+
+                }
+            }
+            function showPosition(data){
+                console.log(data)
+                x.innerText=`Latitude is ${data.coords.latitude} and longitude is ${data.coords.longitude}`
+
+                fetch (`https://map.googleapis.com/maps/api/getcode/json?latlng=${data.coords.latitude},&{data.coords.longtude}$key=`,{method:GET})
+                .then((res)=>res.json())
+                .then((data)=>{
+                    y.innerText = data.results[1].formatted_address
+                })
+                
+            }
+        </script>
+
+    </body>
+</html>
